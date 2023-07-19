@@ -16,8 +16,19 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div class="container text-center mt-5">
-    <h1></h1>
+  <div id="app" class="container text-center mt-5">
+    <h1
+      v-bind:class="titleClass">
+      TESTO STAMPATO CON VUE:
+      <span 
+      v-bind:class="spanClass">
+      {{messaggio}}
+      </span>
+    </h1>
+    <div>
+      <img src="" alt=""
+        v-bind:src="link">
+    </div>
   </div>
 </body>
 <script src="./js/main.js"></script>
